@@ -329,4 +329,5 @@ defaults:
       comments: # true
       share: true
       related: true
-
+home:
+  type: posts
