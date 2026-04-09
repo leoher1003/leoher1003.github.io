@@ -118,12 +118,12 @@ author:
   avatar           : "/assets/images/photo.jpg"
   bio              : "B.S. in Economics and Certificate in Data Science at UW-Madison."
   location         : "Madison, WI"
-  email            : "uher2@wisc.edu"
+  email            : "mailto:uher2@wisc.edu"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-square-envelope"
-      url: "mailto:uher2@wisc.edu"
+    - #label: "Email"
+      #icon: "fas fa-fw fa-square-envelope"
+      #url: "mailto:uher2@wisc.edu"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/leoher1003"
