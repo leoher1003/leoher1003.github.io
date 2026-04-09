@@ -123,10 +123,10 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-square-envelope"
-      url: "uher2@wisc.edu"
+      url: "mailto:uher2@wisc.edu"
     - label: "Github"
       icon: "fas fa-fw fa-github"
-      url: "https://github.io/leoher1003"
+      url: "https://github.com/leoher1003"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-square-x-linkedin"
       url: "https://linkedin.com/in/unnyeong-her-a9a8b033b"
