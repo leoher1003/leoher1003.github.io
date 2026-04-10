@@ -1,3 +1,8 @@
+---
+title: "The Shape of a Champion: Hacking the World Series Roster"
+layout: single
+---
+
 # The Shape of a Champion: Hacking the World Series Roster
 
 
