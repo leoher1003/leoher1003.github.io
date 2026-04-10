@@ -2,7 +2,6 @@
 title: "Statcast Analysis of 2024 MLB Hitters"
 layout: single
 ---
-# Statcast Analysis of 2024 MLB Hitters
 
 ## Project Overview
 
