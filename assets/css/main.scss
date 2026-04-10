@@ -8,32 +8,39 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
-.masthead__menu-item {
-  font-size: 1.1rem !important; 
-  font-weight: 700 !important;   
+html {
+  font-size: 15px !important;
 }
 
-.masthead__menu-item a {
-  padding: 0.5rem 1rem !important; 
+.masthead__menu {
+  font-size: 1.2rem !important;
+  font-weight: 800 !important;
 }
 
 .sidebar {
-  font-size: 1rem !important; 
-  
   .author__name {
-    font-size: 1.3rem !important; 
+    font-size: 1.4rem !important;
     font-weight: 800 !important;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    white-space: nowrap;
+    display: block;
   }
   
-  .author__bio {
-    font-size: 0.95rem !important; 
+  .author__bio, .author__urls {
+    font-size: 1rem !important;
     line-height: 1.4;
+  }
+  
+  .author__urls-wrapper i {
+    font-size: 1.2rem !important;
   }
 }
 
-.author__urls-wrapper button {
-  font-size: 1.1rem !important;
+.page__content, .archive__item-excerpt {
+  font-size: 1rem !important;
+  line-height: 1.6;
+}
+
+.archive__item-title {
+  font-size: 1.2rem !important;
+  font-weight: 700;
 }
