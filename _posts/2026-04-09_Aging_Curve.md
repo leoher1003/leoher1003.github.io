@@ -1,4 +1,4 @@
-# ⚾ The Survival of the Smartest
+# The Survival of the Smartest
 ### Optimizing MLB Roster Construction through Type-Based Survival Analysis and Surplus WAR Backtesting
 
 ## Project Overview
@@ -25,15 +25,17 @@ You will also need to have software installed to execute a Jupyter Notebook. [Li
 
 ## Files
 
-`notebooks` folder will contain the three following files:
+In the  `notebooks` folder, there will be three following files:
 
-`01_data_collection.ipynb` will collect relevant data associated with the project.
+`03_01_data_collection.ipynb` will collect relevant data associated with the project.
 
-`02_regression.ipynb` generate regressions to investigate outperforming veterans.
+`03_02_regression.ipynb` generate regressions to investigate outperforming veterans.
 
-`03_war_projection.ipynb` calculates projected 2025 WAR (Wins Above Replacement) and is compared with actual 2025 WAR.
+`03_03_war_projection.ipynb` calculates projected 2025 WAR (Wins Above Replacement) and is compared with actual 2025 WAR.
 
-`data`, `images` folder will save csv files and images when the three notebooks are executed.
+`data_3` under `data` folder will contain processed data that will be used in the project.
+
+`images` folder under `assets` will have visualized asepcts of this project..
 
 ## Data & Methodology
 
@@ -83,17 +85,40 @@ $$\text{Survival Rate} = \frac{\text{Active Veterans in 2025 (within archetype)}
 ## Key Findings
 
 1. Traits that rely less on physical ability were advantagesous on survival rate
+![Chase% Pitcher](/assets/images/pitcher_inducing_chasepct_vs_age.png)
+![Chase% Hitter](/assets/images/hitter_chasepct_vs_age.png)
+
+[TYPE-BASED SURVIVAL RATE]
+| Type | Total | Survived | Rate (%) |
+|------|-------|----------|----------|
+| Chase% (Discipline) | 5 | 5 | 100.0 |
+| Chase% (Induction) | 9 | 9 | 100.0 |
+| Fastball Spin Rate | 4 | 3 | 75.0 |
+| Fastball Velocity | 7 | 4 | 57.1 |
+| Exit Velocity | 2 | 1 | 50.0 |
+| Batting Average | 8 | 3 | 37.5 |
 
 Unlike Fastball velocity or Exit velocity, players who had good Chase% (high for pitchers, low for hitters) survived longer, where the survival rate was 100% for them in calculating Projected 2025 WAR. 
 
 2. Traits that demonstrate floor and ceiling are different in veterans
+![EV](/assets/images/hitter_exit_velocity_vs_age.png)
+![FF Velo](/assets/images/pitcher_fastball_velocity_vs_age.png)
+![FF Spin](/assets/images/pitcher_fastball_spin_rate_vs_age.png)
+
+| Player | Age | Type | Proj_WAR | Actual_WAR | Surplus |
+|--------|-----|------|----------|------------|---------|
+| Giancarlo Stanton | 35 | Exit Velocity | 0.25 | 1.87 | 1.62 |
+| Aroldis Chapman | 37 | Fastball Velocity | 0.54 | 3.56 | 3.02 |
 
 While survival rate was high on players with good Chase%, the outliers like Chapman or Stanton had physicality-based traits. This implies that players who have outstanding traits could not follow the general trend. 
 
-3. Dramatic rebounds are not very frequent
+3. Dramatic rebounds are not very frequent & Batting Average is no longer important
+
+![AVG](/assets/hitter_batting_average_vs_age.png)
 
 Although there are some cases where veteran players make a comeback season while their records kept declining, and it becomes even harder when their playstyle depends on physical traits. 
 
+Following the global trend of MLB, where batting average is no longer an important statistic, the survival rate of veterans with high batting average was the lowest. While teams might consider underperforming veterans with the need of clubhouse leaders or being tutors for young prospects, batters who rely on batting averages were not very efficient as a member of the 26-man roster.
 
 ## Limitations
 
@@ -107,5 +132,9 @@ Value of veterans not only comes from their statistics, but they have other trai
 
 3. Injury & Health
 
-While there are players who made a rebound season fully based on technical improvements or through changing their team, there are cases where players return from long-term injuries. This makes WAR projection to be less accurate, where the model does not consider whether the player was injured or not.
+While there are players who made a rebound season fully based on technical improvements or through changing their team, there are cases where players return from long-term injuries. This makes WAR projection to be less accurate, where the model does not consider whether the player was injured or not. For instance, Daniel Bard in 2022 was a breakout player where he returned from a long-term yips, a sudden and unexplained loss of ability to execute certain skills in experienced performers such as athletes. 
+
+4. Omission of pitchers who do not throw 4 Seam Fastball
+
+Recently, the number of pitchers who do not throw four seam fastball are increasing. While they throw Sinker or Cutter instead, their movement, velocity, and spin rates are different with a four seam fastball. Also, there are cases where pitchers throw both four seam fastaball and a sinker or cutter. However, in this project, only four seam fastball were took place in the analysis project, and if possible, separating into four seam fastball focused group, sinker focused group, and cutter focused group will increase the quality of pitcher analysis.
 
