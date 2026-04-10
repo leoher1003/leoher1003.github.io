@@ -114,7 +114,7 @@ While survival rate was high on players with good Chase%, the outliers like Chap
 
 3. Dramatic rebounds are not very frequent & Batting Average is no longer important
 
-![AVG](/assets/hitter_batting_average_vs_age.png)
+![AVG](/assets/images/hitter_batting_average_vs_age.png)
 
 Although there are some cases where veteran players make a comeback season while their records kept declining, and it becomes even harder when their playstyle depends on physical traits. 
 
