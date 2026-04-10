@@ -3,9 +3,6 @@ title: "The Shape of a Champion: Hacking the World Series Roster"
 layout: single
 ---
 
-# The Shape of a Champion: Hacking the World Series Roster
-
-
 ## Project Overview
 A popular baseball adage states that "pitching and defense win championships." However, modern baseball focuses on building the most tight 26-man roster possible, but will this guarantee the World Series?
 
