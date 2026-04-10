@@ -103,10 +103,10 @@ Type D (Specialist): Prioritizes Defense (OAA) and Speed (SB), providing a stati
 iber rosters.
 
 5. Bubble Graph Visualization
-![Type A](/assets/images/04_vis_type_a.png)
-![Type B](/assets/images/04_vis_type_b.png)
-![Type C](/assets/images/04_vis_type_c.png)
-![Type D](/assets/images/04_vis_type_d.png)
+![Type A](/assets/images/04_viz_type_a.png)
+![Type B](/assets/images/04_viz_type_b.png)
+![Type C](/assets/images/04_viz_type_c.png)
+![Type D](/assets/images/04_viz_type_d.png)
 Through multi-dimensional bubble graphs, we compare players within each type using three key metrics that define their strategic value. This visualization allows us to identify trends and "outliers" (High-efficiency players) within each specific hitter profile.
 
 | Hitter Type | X-Axis (Efficiency) | Y-Axis (Output) | Bubble Size (Discipline/Versatility) |
