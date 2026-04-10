@@ -41,9 +41,6 @@ These two files are the Python notebook where the code is implemented.
 `data`
 `images`
 
-<<<<<<< HEAD
-The two folders involve datafiles (in .csv) and images used in this project.
-=======
 These two folders involve datafiles (in .csv) and images used in this project.
 
 ## Data & Methodology
@@ -57,7 +54,7 @@ These two folders involve datafiles (in .csv) and images used in this project.
 
 ## Key Findings & Visualizations
 ### 1. The regular season demands depth.
-![WAR Gini vs wins](images/championship_roster_analysis_fixed.png)
+![WAR Gini vs wins](assets/images/championship_roster_analysis_fixed.png)
 Looking at the trendline of all 420 teams, there is a clear negative correlation between the WAR Gini coefficient and Regular Season wins.
 From this, it can be interpreted that **To Survive the 162-game marathon, depth is strictly required**. 
 
@@ -66,12 +63,12 @@ However, the Champions (Red Stars) are widely dispersed, where teams with low de
 Top 3 Player Reliance shows a similar negative trend, which is equivalent to the analysis of WAR Gini coefficient. In contrast, only one WS winning team had a ratio higher than 0.5, which indicates that having three superstars cannot guarantee Championship. 
 
 ### 2. The positional cheat code: The bullpen premium
-![Positional Balance](images/positional_scatter_analysis.png)
+![Positional Balance](assets/images/positional_scatter_analysis.png)
 Analysis using WAR coefficient tells us how WAR is distributed, not where. The scatterplot shows a striking pattern shown in the Champions, where SP and Batters take the majority of the team's WAR, where the Bullpen (RP) ratio is skewed towards the Champions. This indicates that having a strong SP rotation and Batters are a 'must-have' for Championship winning teams in order to survive the 162-game marathon, but having a strong Bullpen (RP) is not as critical in the regular season compared to other positions.
 
 ## Machine Learning Verification
 To eliminate human bias and statistically verify which roster structure metric is the strongest predictor of a Championship, I trained a **Random Forest Classifier**.
-![Feature Importance](images/ml_feature_importance.png)
+![Feature Importance](assets/images/ml_feature_importance.png)
 
 **Addressing Data Imbalance:** Predicting WS winners is highly imbalanced (only 14 champions out of 420, ~3.3%). To prevent the model from predicting "0" for every team, the `class_weight='balanced'` parameter was applied to penalize misclassifications of the minority class.
 
