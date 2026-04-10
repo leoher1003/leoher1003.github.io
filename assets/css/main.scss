@@ -9,25 +9,31 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 
-html {
-  font-size: 15px !important; 
+.masthead__menu-item {
+  font-size: 1.1rem !important; 
+  font-weight: 700 !important;   
 }
 
-.archive__item-title {
-  font-size: 1.1rem !important; 
-  margin-bottom: 0.5em;
+.masthead__menu-item a {
+  padding: 0.5rem 1rem !important; 
 }
 
 .sidebar {
-  font-size: 0.9rem !important;
+  font-size: 1rem !important; 
   
   .author__name {
-    font-size: 1.1rem !important;
-    white-space: nowrap; 
+    font-size: 1.3rem !important; 
+    font-weight: 800 !important;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .author__bio {
+    font-size: 0.95rem !important; 
+    line-height: 1.4;
   }
 }
 
-.page__content {
-  font-size: 1rem !important;
-  line-height: 1.5; 
+.author__urls-wrapper button {
+  font-size: 1.1rem !important;
 }
