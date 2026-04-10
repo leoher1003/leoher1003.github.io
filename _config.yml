@@ -331,3 +331,6 @@ defaults:
       related: true
 home:
   type: posts
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
