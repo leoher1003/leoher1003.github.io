@@ -3,7 +3,6 @@ title: "The Survival of the Smartest: MLB Aging Curve Analysis"
 layout: single
 ---
 
-# The Survival of the Smartest
 ### Optimizing MLB Roster Construction through Type-Based Survival Analysis and Surplus WAR Backtesting
 
 ## Project Overview
