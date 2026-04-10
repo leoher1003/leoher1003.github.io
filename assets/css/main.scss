@@ -9,38 +9,38 @@ search: false
 @import "minimal-mistakes"; // main partials
 
 html {
-  font-size: 15px !important;
+  font-size: 100% !important;
 }
 
 .masthead__menu {
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
   font-weight: 800 !important;
 }
 
 .sidebar {
   .author__name {
-    font-size: 1.4rem !important;
+    font-size: 1.6rem !important;
     font-weight: 800 !important;
     white-space: nowrap;
     display: block;
   }
   
   .author__bio, .author__urls {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     line-height: 1.4;
   }
   
   .author__urls-wrapper i {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
   }
 }
 
-.page__content, .archive__item-excerpt {
-  font-size: 1rem !important;
+.page__content, .archive__item-excerpt, .archive__item-teaser {
+  font-size: 0.85rem !important;
   line-height: 1.6;
 }
 
 .archive__item-title {
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   font-weight: 700;
 }
